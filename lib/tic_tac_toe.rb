@@ -111,11 +111,11 @@ class TicTacToe
     end
   end
 
-  def winner
+  def winner # Given a winning @board
     index = []
     index = won?
     if index == false
-      return nil
+      return nil # the winning method should return x,o that has won the game
     else
       if @board[index[0]] == "X"
         return "X"
